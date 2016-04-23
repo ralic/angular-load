@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.1 - 2016-01-16
+- Added IE8 support to script loading ([#26](https://github.com/urish/angular-load/pull/26), contributed by [benmarch](https://github.com/benmarch))
+
+## 0.4.0 - 2015-10-22
+- Make sure onreadystatechange callback is only fired when file is fully loaded ([#23](https://github.com/urish/angular-load/pull/23), contributed by [davidchin](https://github.com/davidchin))
+
 ## 0.3.0 - 2015-08-08
 - Only load items once ([#10](https://github.com/urish/angular-load/pull/10), contributed by [dougmoscrop](https://github.com/dougmoscrop))
 

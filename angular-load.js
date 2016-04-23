@@ -1,4 +1,4 @@
-/* angular-load.js / v0.3.0 / (c) 2014, 2015 Uri Shaked / MIT Licence */
+/* angular-load.js / v0.4.1 / (c) 2014, 2015, 2016 Uri Shaked / MIT Licence */
 
 (function () {
 	'use strict';
@@ -16,6 +16,10 @@
 						var element = createElement(url);
 
 						element.onload = element.onreadystatechange = function (e) {
+							if (element.readyState && element.readyState !== 'complete' && element.readyState !== 'loaded') {
+								return;
+							}
+
 							$timeout(function () {
 								deferred.resolve(e);
 							});
